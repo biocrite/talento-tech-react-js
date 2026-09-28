@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import { LocalizationProvider, CartProvider } from "@context";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
+  <StrictMode> 
     <BrowserRouter>
       <LocalizationProvider>
         <CartProvider>

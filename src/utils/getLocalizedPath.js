@@ -1,0 +1,126 @@
+// import { routes } from "@routes";
+
+// export function getLocalizedPath(pathname, language) {
+//   const segments = pathname.split("/");
+//   const currentLanguage = segments[1];
+
+//   if (!segments[2]) {
+//     return `/${language}`;
+//   }
+
+//   const currentSegment = segments[2];
+
+//   const matchedRoute = Object.values(routes).find(
+//     (route) => route[currentLanguage] === currentSegment
+//   );
+
+//   if (!matchedRoute) {
+//     return `/${language}`;
+//   }
+
+//   segments[1] = language;
+//   segments[2] = matchedRoute[language];
+
+//   return segments.join("/");
+// }
+
+import { routes } from "@routes";
+
+const supportedLanguages = ["en", "es", "pt"];
+
+export function getLocalizedPath(pathname, language) {
+  const segments = pathname.split("/").filter(Boolean);
+
+  // Remove current language
+  const currentLanguage = supportedLanguages.includes(segments[0])
+    ? segments.shift()
+    : null;
+
+  if (!currentLanguage) {
+    return `/${language}`;
+  }
+
+  // Nothing after language → home
+  if (segments.length === 0) {
+    return `/${language}`;
+  }
+
+  const [first, second, third] = segments;
+
+  /*
+   * SHOP
+   *
+   * /en/shop
+   * /en/shop/:category
+   * /en/shop/product/:id
+   */
+
+  const shopLanguages = Object.values(routes.shop);
+
+  if (shopLanguages.includes(first)) {
+    const shopPath = routes.shop[language];
+
+    // /shop
+    if (!second) {
+      return `/${language}/${shopPath}`;
+    }
+
+    /*
+     * /shop/product/:id
+     */
+    const productLanguages = Object.values(routes.product);
+
+    if (productLanguages.includes(second)) {
+      const productPath = routes.product[language];
+
+      return [
+        language,
+        shopPath,
+        productPath,
+        third,
+      ]
+        .filter(Boolean)
+        .join("/");
+    }
+
+    /*
+     * /shop/category
+     *
+     * Category itself is not localized,
+     * so preserve it.
+     */
+    const categoryLanguages = Object.values(routes.category);
+
+    if (categoryLanguages.includes(second)) {
+      const categoryPath = routes.category[language];
+
+      return [
+        language,
+        shopPath,
+        categoryPath,
+        third,
+      ]
+        .filter(Boolean)
+        .join("/");
+    }
+
+  }
+
+  /*
+   * Top-level routes
+   */
+
+  for (const [route] of Object.entries(routes)) {
+    // Skip nested routes
+    if (route.parent) continue;
+
+    const localizedPaths = Object.values(route);
+
+    if (localizedPaths.includes(first)) {
+      return `/${language}/${route[language]}`;
+    }
+  }
+
+  // Unknown route → language home
+  return `/${language}`;
+}

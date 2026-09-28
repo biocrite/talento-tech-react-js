@@ -1,0 +1,452 @@
+{
+  "home": {
+    "en": "Home",
+    "es": "Inicio",
+    "pt": "Início"
+  },
+
+  "shop": {
+    "en": "Shop",
+    "es": "Tienda",
+    "pt": "Loja"
+  },
+
+  "cart": {
+    "en": "Cart",
+    "es": "Carrito",
+    "pt": "Carrinho"
+  },
+
+  "products": {
+    "en": "Products",
+    "es": "Productos",
+    "pt": "Produtos"
+  },
+
+  "relatedProducts": {
+    "en": "Related Products",
+    "es": "Productos Relacionados",
+    "pt": "Produtos Relacionados"
+  },
+
+  "product": {
+    "en": "Product",
+    "es": "Producto",
+    "pt": "Produto"
+  },
+
+  "language": {
+    "en": "Language",
+    "es": "Idioma",
+    "pt": "Idioma"
+  },
+
+  "currency": {
+    "en": "Currency",
+    "es": "Moneda",
+    "pt": "Moeda"
+  },
+
+  "english": {
+    "en": "English",
+    "es": "Inglés",
+    "pt": "Inglês"
+  },
+
+  "spanish": {
+    "en": "Spanish",
+    "es": "Español",
+    "pt": "Espanhol"
+  },
+
+  "portuguese": {
+    "en": "Portuguese",
+    "es": "Portugués",
+    "pt": "Português"
+  },
+
+  "ars": {
+    "en": "Argentine Peso",
+    "es": "Peso argentino",
+    "pt": "Peso argentino"
+  },
+
+  "usd": {
+    "en": "US Dollar",
+    "es": "Dólar estadounidense",
+    "pt": "Dólar estadounidense"
+  },
+
+  "brl": {
+    "en": "Brazilian Real",
+    "es": "Real brasileño",
+    "pt": "Real brasileiro"
+  },
+
+  "addToCart": {
+    "en": "Add to Cart",
+    "es": "Añadir al carrito",
+    "pt": "Adicionar ao carrinho"
+  },
+
+  "removeFromCart": {
+    "en": "Remove from Cart",
+    "es": "Eliminar del carrito",
+    "pt": "Remover do carrinho"
+  },
+
+  "viewProduct": {
+    "en": "View Product",
+    "es": "Ver producto",
+    "pt": "Ver produto"
+  },
+
+  "viewCart": {
+    "en": "View Cart",
+    "es": "Ver carrito",
+    "pt": "Ver carrinho"
+  },
+
+  "continueShopping": {
+    "en": "Continue Shopping",
+    "es": "Seguir comprando",
+    "pt": "Continuar comprando"
+  },
+
+  "addMoreItems": {
+    "en": "Add More Items",
+    "es": "Añadir más productos",
+    "pt": "Adicionar mais produtos"
+  },
+
+  "price": {
+    "en": "Price",
+    "es": "Precio",
+    "pt": "Preço"
+  },
+
+  "quantity": {
+    "en": "Quantity",
+    "es": "Cantidad",
+    "pt": "Quantidade"
+  },
+
+  "total": {
+    "en": "Total",
+    "es": "Total",
+    "pt": "Total"
+  },
+
+  "subtotal": {
+    "en": "Subtotal",
+    "es": "Subtotal",
+    "pt": "Subtotal"
+  },
+
+  "emptyCart": {
+    "en": "Your cart is empty.",
+    "es": "Tu carrito está vacío.",
+    "pt": "Seu carrinho está vazio."
+  },
+
+  "cartTotal": {
+    "en": "Cart Total",
+    "es": "Total del carrito",
+    "pt": "Total do carrinho"
+  },
+
+  "checkout": {
+    "en": "Checkout",
+    "es": "Finalizar compra",
+    "pt": "Finalizar compra"
+  },
+
+  "search": {
+    "en": "Search",
+    "es": "Buscar",
+    "pt": "Pesquisar"
+  },
+
+  "searchProducts": {
+    "en": "Search products",
+    "es": "Buscar productos",
+    "pt": "Pesquisar produtos"
+  },
+
+  "noProductsFound": {
+    "en": "No products found.",
+    "es": "No se encontraron productos.",
+    "pt": "Nenhum produto encontrado."
+  },
+
+  "productNotFound": {
+    "en": "Product not found.",
+    "es": "No se encontró el producto.",
+    "pt": "O produto não foi encontrado."
+  },
+
+  "back": {
+    "en": "Back",
+    "es": "Volver",
+    "pt": "Voltar"
+  },
+
+  "next": {
+    "en": "Next",
+    "es": "Siguiente",
+    "pt": "Próximo"
+  },
+
+  "previous": {
+    "en": "Previous",
+    "es": "Anterior",
+    "pt": "Anterior"
+  },
+
+  "close": {
+    "en": "Close",
+    "es": "Cerrar",
+    "pt": "Fechar"
+  },
+
+  "open": {
+    "en": "Open",
+    "es": "Abrir",
+    "pt": "Abrir"
+  },
+
+  "loading": {
+    "en": "Loading...",
+    "es": "Cargando...",
+    "pt": "Carregando..."
+  },
+
+  "error": {
+    "en": "Something went wrong.",
+    "es": "Algo salió mal.",
+    "pt": "Algo deu errado."
+  },
+
+  "tryAgain": {
+    "en": "Try Again",
+    "es": "Intentar de nuevo",
+    "pt": "Tentar novamente"
+  },
+
+  "yes": {
+    "en": "Yes",
+    "es": "Sí",
+    "pt": "Sim"
+  },
+
+  "no": {
+    "en": "No",
+    "es": "No",
+    "pt": "Não"
+  },
+
+  "cancel": {
+    "en": "Cancel",
+    "es": "Cancelar",
+    "pt": "Cancelar"
+  },
+
+  "confirm": {
+    "en": "Confirm",
+    "es": "Confirmar",
+    "pt": "Confirmar"
+  },
+
+  "languageChanged": {
+    "en": "Language changed.",
+    "es": "Idioma cambiado.",
+    "pt": "Idioma alterado."
+  },
+
+  "currencyChanged": {
+    "en": "Currency changed.",
+    "es": "Moneda cambiada.",
+    "pt": "Moeda alterada."
+  },
+
+  "privacyPolicy": {
+    "en": "Privacy Policy",
+    "es": "Política de Privacidad",
+    "pt": "Política de Privacidade"
+  },
+
+  "termsAndConditions": {
+    "en": "Terms and Conditions",
+    "es": "Términos y Condiciones",
+    "pt": "Termos e Condições"
+  },
+
+  "contact": {
+    "en": "Contact",
+    "es": "Contacto",
+    "pt": "Contato"
+  },
+
+  "about": {
+    "en": "About Us",
+    "es": "Sobre Nosotros",
+    "pt": "Sobre Nós"
+  },
+
+  "faq": {
+    "en": "FAQ",
+    "es": "Preguntas Frecuentes",
+    "pt": "Perguntas Frequentes"
+  },
+
+  "shipping": {
+    "en": "Shipping",
+    "es": "Envíos",
+    "pt": "Envio"
+  },
+
+  "returns": {
+    "en": "Returns",
+    "es": "Devoluciones",
+    "pt": "Devoluções"
+  },
+
+  "allRightsReserved": {
+    "en": "All Rights Reserved",
+    "es": "Todos los derechos reservados",
+    "pt": "Todos os direitos reservados"
+  },
+
+  "welcome": {
+    "en": "Welcome",
+    "es": "Bienvenido",
+    "pt": "Bem-vindo"
+  },
+
+  "homeTitle": {
+    "en": "Find your perfect pair",
+    "es": "Encuentra tu par perfecto",
+    "pt": "Encontre o seu par perfeito"
+  },
+
+  "homeSubtitle": {
+    "en": "Discover comfortable and stylish footwear for every step of your journey.",
+    "es": "Descubre calzado cómodo y con estilo para cada paso de tu camino.",
+    "pt": "Descubra calçados confortáveis e estilosos para cada passo."
+  },
+
+  "shopNow": {
+    "en": "Shop now",
+    "es": "Comprar ahora",
+    "pt": "Comprar agora"
+  },
+
+  "ourSelection": {
+    "en": "Our selection",
+    "es": "Nuestra selección",
+    "pt": "Nossa seleção"
+  },
+
+  "featuredProducts": {
+    "en": "Featured products",
+    "es": "Productos destacados",
+    "pt": "Produtos em destaque"
+  },
+
+  "viewAllProducts": {
+    "en": "View all products",
+    "es": "Ver todos los productos",
+    "pt": "Ver todos os produtos"
+  },
+
+  "explore": {
+    "en": "Explore",
+    "es": "Explora",
+    "pt": "Explore"
+  },
+
+  "shopByCategory": {
+    "en": "Shop by category",
+    "es": "Comprar por categoría",
+    "pt": "Comprar por categoria"
+  },
+
+  "women": {
+    "en": "Women",
+    "es": "Mujeres",
+    "pt": "Mulheres"
+  },
+
+  "men": {
+    "en": "Men",
+    "es": "Hombres",
+    "pt": "Homens"
+  },
+
+  "children": {
+    "en": "Children",
+    "es": "Niños",
+    "pt": "Crianças"
+  },
+
+  "fastDelivery": {
+    "en": "Fast delivery",
+    "es": "Entrega rápida",
+    "pt": "Entrega rápida"
+  },
+
+  "fastDeliveryDescription": {
+    "en": "Get your order delivered quickly and safely.",
+    "es": "Recibe tu pedido de forma rápida y segura.",
+    "pt": "Receba seu pedido com rapidez e segurança."
+  },
+
+  "easyReturns": {
+    "en": "Easy returns",
+    "es": "Devoluciones fáciles",
+    "pt": "Devoluções fáceis"
+  },
+
+  "easyReturnsDescription": {
+    "en": "Changed your mind? Returning your order is simple.",
+    "es": "¿Cambiaste de opinión? Devolver tu pedido es muy sencillo.",
+    "pt": "Mudou de ideia? Devolver seu pedido é simples."
+  },
+
+  "secureShopping": {
+    "en": "Secure shopping",
+    "es": "Compra segura",
+    "pt": "Compra segura"
+  },
+
+  "secureShoppingDescription": {
+    "en": "Your personal information and payment are always protected.",
+    "es": "Tu información personal y tus pagos están siempre protegidos.",
+    "pt": "Suas informações pessoais e seus pagamentos estão sempre protegidos."
+  },
+  "addedToCart": {
+    "es": "Se adicionó al carrito",
+    "pt": "No carrinho",
+    "en": "Added to cart"
+  },
+  "removedFromCart": {
+    "en": "Removed from cart",
+    "es": "Se eliminó del carrito",
+    "pt": "Removido do carrinho"
+  },
+  "undo": {
+    "en": "Undo",
+    "es": "Deshacer",
+    "pt": "Desfazer"
+  },
+  "readdedToCart": {
+    "en": "Added back to cart",
+    "es": "Se readicionó al carrito",
+    "pt": "Adicionado novamente ao carrinho"
+  },
+  "allItems": {
+    "en": "All items",
+    "es": "Todo",
+    "pt": "Tudo"
+  }
+}

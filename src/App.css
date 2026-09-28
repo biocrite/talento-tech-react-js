@@ -1,0 +1,52 @@
+:root {
+  --border-default: 1px solid #ccc;
+  --border-radius-default: 8px;
+  --box-shadow-default:  0 2px 4px rgba(0, 0, 0, 0.1);
+  --hover-color: rgb(168, 127, 22);
+  --theme-color: navy;
+  --emphasis-color: var(--theme-color);
+}
+
+button:hover, a:hover {
+ color: var(--hover-color);
+}
+.basic-button {
+  padding: 0.75rem 1.5rem;
+
+  background-color: var(--emphasis-color);
+  color: #fff;
+
+  border: none;
+  border-radius: var(--border-radius-default);
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease,
+    box-shadow 0.2s ease;
+
+}
+
+.basic-button:hover {
+  background-color: #12576e;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.basic-button:active {
+  background-color: #0e4658;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.basic-button:focus-visible {
+  outline: 3px solid rgba(23, 107, 135, 0.3);
+  outline-offset: 3px;
+}

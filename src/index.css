@@ -1,0 +1,102 @@
+/* =========================
+   Reset / Base
+   ========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  line-height: 1.5;
+
+  color: #222;
+  background: #fff;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+main > p {
+    line-height: 2em;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+
+/* =========================
+   Typography
+   ========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  text-align: center;
+}
+
+main p, main ul {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* =========================
+   Links
+   ========================= */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* =========================
+   Images
+   ========================= */
+
+/*img,
+picture,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}*/
+
+img {
+  height: auto;
+}
+
+
+/* =========================
+   Forms
+   ========================= */
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  user-select: none;
+}
+

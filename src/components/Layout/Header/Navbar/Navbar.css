@@ -22,7 +22,7 @@
   margin-right: 0.75em;
 }
 
-.layout-navbar-list li a {
+.layout-navbar-list li a, .layout-navbar-list li button {
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -30,6 +30,9 @@
   border: 0;
   border-bottom: 2px solid transparent;
   transition: color 0.2s, border-color 0.2s;
+  display: block;
+  width: 100%;
+  text-align: left;
 }
 
 .layout-navbar-list li a:hover {
@@ -66,6 +69,11 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  .layout-navbar-list li {
+  display: block;
+  width: 100%;
+}
 
   .mobile-navbar-actions {
     display: flex;

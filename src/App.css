@@ -6,6 +6,9 @@
   --theme-color: navy;
   --emphasis-color: var(--theme-color);
 }
+body {
+  background-color: rgb(239, 239, 253);
+}
 
 button:hover, a:hover {
  color: var(--hover-color);

@@ -1,29 +1,3 @@
-// import { routes } from "@routes";
-
-// export function getLocalizedPath(pathname, language) {
-//   const segments = pathname.split("/");
-//   const currentLanguage = segments[1];
-
-//   if (!segments[2]) {
-//     return `/${language}`;
-//   }
-
-//   const currentSegment = segments[2];
-
-//   const matchedRoute = Object.values(routes).find(
-//     (route) => route[currentLanguage] === currentSegment
-//   );
-
-//   if (!matchedRoute) {
-//     return `/${language}`;
-//   }
-
-//   segments[1] = language;
-//   segments[2] = matchedRoute[language];
-
-//   return segments.join("/");
-// }
-
 import { routes } from "@routes";
 
 const supportedLanguages = ["en", "es", "pt"];
@@ -110,16 +84,27 @@ export function getLocalizedPath(pathname, language) {
    * Top-level routes
    */
 
-  for (const [route] of Object.entries(routes)) {
-    // Skip nested routes
-    if (route.parent) continue;
+  // for (const [route] of Object.entries(routes)) {
+  //   // Skip nested routes
+  //   if (route.parent) continue;
 
-    const localizedPaths = Object.values(route);
+  //   const localizedPaths = Object.values(route);
 
-    if (localizedPaths.includes(first)) {
-      return `/${language}/${route[language]}`;
-    }
+  //   if (localizedPaths.includes(first)) {
+  //     return `/${language}/${route[language]}`;
+  //   }
+  // }
+
+  for (const [, route] of Object.entries(routes)) {
+  // Skip nested routes
+  if (route.parent) continue;
+
+  const localizedPaths = Object.values(route);
+
+  if (localizedPaths.includes(first)) {
+    return `/${language}/${route[language]}`;
   }
+}
 
   // Unknown route → language home
   return `/${language}`;

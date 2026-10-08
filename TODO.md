@@ -29,7 +29,7 @@
 ### Localization
 
 - [x] Implement multilingual content
-- [d] Implement multiple currencies
+- [x] Implement multiple currencies
 - [x] Implement localized URLs and navigation
 - [x] Finish multilingual Terms and Conditions and Privacy Policy
 

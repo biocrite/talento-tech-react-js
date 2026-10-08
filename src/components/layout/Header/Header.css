@@ -1,0 +1,41 @@
+.layout-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  padding: 1rem clamp(1.2rem, 3vw, 2em);
+  background-color: white;
+  box-shadow: var(--box-shadow-default);
+  border-radius: 0 0 var(--border-radius-default) var(--border-radius-default);
+  height: 4em;
+  font-size: clamp(0.8em, 2vw, 1em);
+}
+
+.layout-header-website-title {
+  margin: 0;
+
+  /* Min size: 1.2rem, Preferred fluid size: 3vw, Max size: 2em */
+  font-size: clamp(1.2rem, 3vw, 2em);
+  
+  font-weight: bold;
+  text-align: left;
+}
+
+.layout-header-website-title a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.website-logo {
+  width: 1em;
+  height: 1em;
+  object-fit: contain;
+}

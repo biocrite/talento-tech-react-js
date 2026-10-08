@@ -1,0 +1,49 @@
+.categories-list {
+  margin: auto 0 1em 0;
+}
+
+.categories-list ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: unset;
+  margin-left: 0;
+  padding: 0;
+}
+
+.categories-list ul li button {
+  background-color: rgb(228, 238, 249);
+  border-radius: var(--border-radius-default);
+  padding: 0.2em 1em;
+  cursor: pointer;
+  border: 2px solid transparent;
+  font-weight: bold;
+  margin-left: 0;
+  font-size: clamp(.8em, 1.5vw, 1.5em);
+
+  &:hover {
+    box-shadow: var(--box-shadow-default);
+    border-color: var(--emphasis-color);
+    color: unset;
+  }
+
+  &.selected {
+    background-color: var(--emphasis-color);
+    color: white;
+    position: relative;
+  }
+
+  :not(:first-of-type) &.selected::after {
+    content: "×";
+    font-size: .6em;
+    color: rgb(222, 219, 250);
+    position: absolute;
+    top: 0em;
+    right: .6em;
+    border-radius: 50%;
+
+  }
+}

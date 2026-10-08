@@ -1,0 +1,122 @@
+.notifications-container {
+  position: fixed;
+  top: 5em;
+  right: 1.5em;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  max-width: min(calc(100% - 3em), 1000px);
+  box-sizing: border-box;
+  pointer-events: none;
+}
+.notifications {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  padding: 0.5rem 3rem 0.5rem 1.25rem;
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: var(--border-radius-default);
+
+  background-color: rgba(244, 252, 255, 0.994);
+  color: #222;
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.12),
+    0 2px 8px rgba(0, 0, 0, 0.06);
+
+  pointer-events: auto;
+
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.notifications.is-visible {
+  opacity: 1;
+}
+
+.notifications.is-hidden,
+.notifications.is-fading {
+  opacity: 0;
+}
+
+.notifications p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5em;
+  text-align: center;
+  flex: 1;
+  line-height: 1.5;
+  padding: auto 2em;
+}
+
+.notifications-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: transparent;
+  color: #666;
+
+  font-size: 1.25rem;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.notifications-close:hover {
+  background: rgba(0, 0, 0, 0.06);
+  color: #222;
+}
+
+.notifications-close:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.notification-action-buttons {
+  border: 1px solid lightgray;
+  font-weight: bold;
+  margin: auto 1em auto 2em;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.notification-action-buttons:hover {
+  background-color: var(--emphasis-color);
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .notifications-container {
+    right: 5px;
+    left: 5px;
+    top: unset;
+    bottom: 1em;
+    max-width: min(calc(100% - 10px), 1000px);
+  }
+
+  .notifications {
+    flex-direction: column;
+    background-color: rgb(255, 240, 244);
+    padding: 1em;
+  }
+}

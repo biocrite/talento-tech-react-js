@@ -1,0 +1,359 @@
+.home {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem 5rem;
+}
+
+.home h1,
+.home h2,
+.home h3,
+.home p {
+  margin-top: 0;
+}
+
+.home-eyebrow {
+  margin-bottom: 0.75rem;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.home-section {
+  margin-top: 6rem;
+}
+
+.home-section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.home-section-heading h2 {
+  margin-bottom: 0;
+  font-size: clamp(2em, 3vw, 2.5rem);
+}
+
+.home-section-heading > a {
+  flex-shrink: 0;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+  text-decoration-skip-ink: auto;
+}
+
+/* =========================
+   Hero
+   ========================= */
+
+.home-hero {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  min-height: 520px;
+  margin-top: 2rem;
+  overflow: hidden;
+  border-radius: var(--border-radius-default);
+  background: #d9f2fd;
+  text-align: center;
+  margin: auto -1.5em;
+}
+
+.home-hero {
+  position: relative;
+  overflow: hidden;
+  background-color: #e5e5f7;
+}
+
+.home-hero::before {
+  content: "";
+  position: absolute;
+  inset: -100%;
+  transform: rotate(360deg);
+  transform-origin: center;
+  background-color: #e5e5f7;
+  opacity: 0.1;
+  background-image:
+    linear-gradient(135deg, #444cf7 25%, transparent 25%),
+    linear-gradient(225deg, #444cf7 25%, transparent 25%),
+    linear-gradient(45deg, #444cf7 25%, transparent 25%),
+    linear-gradient(315deg, #444cf7 25%, #e5e5f7 25%);
+  background-position:
+    40px 0,
+    40px 0,
+    0 0,
+    0 0;
+  background-size: 80px 80px;
+  background-repeat: repeat;
+  /* z-index: 0; */
+}
+
+.home-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4rem clamp(2rem, 4vw, 4rem);
+  z-index: 1;
+}
+
+.home-hero h1 {
+  max-width: 11ch;
+  margin: 0 0 1.25rem;
+  font-size: clamp(2.8em, 12vw, 10em);
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+}
+
+.home-hero .home-eyebrow {
+  font-size: clamp(1.5em, 3.5vw, 10em);
+  color: rgb(0, 0, 78);
+}
+
+.home-hero-description {
+  width: 100%;
+  max-width: 34em;
+  margin: 0 0 2rem;
+  font-size: clamp(1.25em, 2vw, 2em);
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+/* =========================
+   Featured products
+   ========================= */
+
+.home-section .product-list {
+  margin-top: 0;
+}
+
+/* =========================
+   Categories
+   ========================= */
+
+.home-categories {
+  padding: 3rem;
+  border-radius: 2rem;
+  background: #fff9cc;
+}
+
+.home-category-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.home-category {
+  position: relative;
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  background: #eee;
+}
+
+.home-category::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0) 55%
+  );
+}
+
+.home-category img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.home-category span {
+  position: absolute;
+  z-index: 1;
+  bottom: 1.25rem;
+  left: 1.5rem;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.home-category:hover img {
+  transform: scale(1.06);
+}
+
+/* =========================
+   Benefits
+   ========================= */
+
+.home-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin-top: 6rem;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 1.5rem;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.home-benefit {
+  padding: 2.5rem 2rem;
+  text-align: center;
+  background: white;
+}
+
+.home-benefit-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0 auto 1.25rem;
+  border-radius: 50%;
+  background: #d9f2fd;
+  font-size: 1.4rem;
+}
+
+.home-benefit:nth-child(2) .home-benefit-icon {
+  background: #fff9cc;
+}
+
+.home-benefit:nth-child(3) .home-benefit-icon {
+  background: #f9e5f3;
+}
+
+.home-benefit h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.home-benefit p {
+  max-width: 260px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  opacity: 0.65;
+}
+
+/* =========================
+   Hover / focus
+   ========================= */
+
+.home a {
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.home a:hover {
+  opacity: 0.8;
+}
+
+.home a:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+
+/* =========================
+   Tablet
+   ========================= */
+
+@media (max-width: 900px) {
+  .home {
+    padding-inline: 1.25rem;
+  }
+
+  .home-hero {
+    min-height: 420px;
+  }
+
+  .home-category-list {
+    gap: 1rem;
+  }
+
+  .home-categories {
+    padding: 2rem;
+  }
+}
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 600px) {
+  .home {
+    padding-inline: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  .home-hero {
+    min-height: 380px;
+    border-radius: 1.25rem;
+  }
+
+  .home-hero-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .home-hero h1 {
+    font-size: clamp(2rem, 10vw, 4rem);
+  }
+
+  /*.home-hero-description {
+    font-size: 1em;
+  }*/
+
+  .home-section {
+    margin-top: 4rem;
+    text-align: center;
+
+
+  }
+
+  .home-section-heading {
+    align-items: center;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+
+  .home-eyebrow {
+    font-size: 1em;
+  }
+
+  .home-category-list {
+    grid-template-columns: 1fr;
+  }
+
+  .home-category {
+    aspect-ratio: 16 / 9;
+  }
+
+  .home-categories {
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+  }
+
+  .home-benefits {
+    grid-template-columns: 1fr;
+    margin-top: 4rem;
+  }
+
+  .home-benefit {
+    padding: 2rem 1.5rem;
+  }
+}

@@ -1,0 +1,18 @@
+footer {
+  text-align: center;
+  padding: 2em .5em;
+  background-color: var(--theme-color);
+  color: white;
+  margin-top: 2em;
+  width: 100%;
+  font-size: clamp(0.8rem, 2vw, 1em);
+}
+footer p {
+  margin: 0;
+  padding: 0;
+}
+footer a:hover {
+  display: inline-block;
+  color: inherit;
+    text-shadow: 0 0 0 currentColor;
+}

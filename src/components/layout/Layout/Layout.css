@@ -1,0 +1,17 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-main {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: .8em auto;
+  padding: clamp(1rem, 2vw, 2rem);
+  background-color: white;
+  border-radius: var(--border-radius-default);
+}
+
+

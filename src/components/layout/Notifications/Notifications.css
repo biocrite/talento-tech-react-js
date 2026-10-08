@@ -110,7 +110,7 @@
     right: 5px;
     left: 5px;
     top: unset;
-    bottom: 1em;
+    bottom: 2.5em;
     max-width: min(calc(100% - 10px), 1000px);
   }
 

@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useLocalization } from "@context";
-import { getProducts } from "@services/products.js";
+import {
+  getProductById,
+  getProductsByCategory,
+} from "@services/products.js";
 
 export const useProductDetails = () => {
   const { id } = useParams();
   const { t } = useLocalization();
 
-  const [productDetails, setProductDetails] = useState(null);
+  const [product, setProduct] = useState(null);
   const [relatedProducts, setRelatedProducts] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -20,32 +23,44 @@ export const useProductDetails = () => {
       setError(null);
 
       try {
-        const products = await getProducts();
+        const item = await getProductById(id);
 
         if (cancelled) return;
 
-        const item = products.find(
-          (product) => String(product.id) === id,
-        );
-
         if (!item) {
-          throw new Error(t("ProductNotFound"));
+          throw new Error(t("productNotFound"));
         }
 
-        const related = products.filter(
-          (product) =>
-            product.id !== item.id &&
-            product.categories?.some((category) =>
-              item.categories?.includes(category),
-            ),
+        setProduct(item);
+
+        const categories = item.categories ?? [];
+
+        if (categories.length === 0) {
+          setRelatedProducts([]);
+          return;
+        }
+
+        const results = await Promise.all(
+          categories.map((category) =>
+            getProductsByCategory(category)
+          )
         );
 
-        setProductDetails(item);
-        setRelatedProducts(related);
+        if (cancelled) return;
+
+        const uniqueProducts = new Map();
+
+        results.flat().forEach((related) => {
+          if (related.id !== item.id) {
+            uniqueProducts.set(related.id, related);
+          }
+        });
+
+        setRelatedProducts([...uniqueProducts.values()]);
       } catch (err) {
         if (!cancelled) {
-          setError(err.message || t("ProductLoadError"));
-          setProductDetails(null);
+          setError(err.message || t("productLoadError"));
+          setProduct(null);
           setRelatedProducts([]);
         }
       } finally {
@@ -63,7 +78,7 @@ export const useProductDetails = () => {
   }, [id, t]);
 
   return {
-    product: productDetails,
+    product,
     relatedProducts,
     loading,
     error,

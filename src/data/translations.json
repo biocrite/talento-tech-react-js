@@ -486,5 +486,15 @@
     "en": "Dress Shoes",
     "es": "Zapatos de Vestir",
     "pt": "Sapatos Sociais"
-  }
+  },
+"errorFetchingProducts": {
+  "en": "Error fetching products.",
+  "es": "Error al obtener los productos.",
+  "pt": "Erro ao buscar os produtos."
+},
+"couldNotLoadProducts": {
+  "en": "Could not load products.",
+  "es": "No se pudieron cargar los productos.",
+  "pt": "Não foi possível carregar os produtos."
+}
 }

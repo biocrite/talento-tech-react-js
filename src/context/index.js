@@ -1,2 +1,3 @@
-export { CartProvider, useCart } from "./CartProvider/CartProvider";
-export { LocalizationProvider, useLocalization } from "./LocalizationProvider/LocalizationProvider"
+export { CartProvider, useCart } from "./CartProvider";
+export { LocalizationProvider, useLocalization } from "./LocalizationProvider"
+export { AuthProvider, useAuth } from "./AuthContext";

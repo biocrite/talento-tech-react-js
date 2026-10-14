@@ -42,7 +42,7 @@ export function Home() {
 
         {loading ? (
           <p>Loading products...</p>
-        ) : error ? (
+        ) : error || featuredProducts[0] == null ? (
           <p role="alert">{error}</p>
         ) : (
           <ProductList products={featuredProducts} />

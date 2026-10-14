@@ -7,6 +7,9 @@ import {
   Cart,
   Home,
   Page,
+  Login,
+  ProtectedRoute,
+  Admin
 } from "@components";
 
 import { useLocalization } from "@context";
@@ -32,6 +35,16 @@ export default function App() {
   return (
     <Layout>
       <Routes>
+        <Route path="/login" element={<Login />} />
+
+        <Route
+          path="/admin"
+          element={
+            <ProtectedRoute requireAdmin>
+              <Admin />
+            </ProtectedRoute>
+          }
+        />
         {supportedLangs.map((language) => (
           <Route key={language} path={`/${language}`}>
             {/* Home */}

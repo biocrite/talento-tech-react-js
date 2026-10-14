@@ -1,11 +1,13 @@
 
 import { useEffect, useState } from "react";
 import { getProducts } from "@services/products.js";
+import { useLocalization } from "@context";
 
 export const useProducts = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const { t } = useLocalization();
 
   useEffect(() => {
     let cancelled = false;
@@ -16,6 +18,10 @@ export const useProducts = () => {
 
         if (!cancelled) {
           setProducts(data);
+
+          if (data.length === 0) {
+            setError(t("noProductsFound"));
+          }
         }
       } catch (err) {
         console.error("Error fetching products:", err);

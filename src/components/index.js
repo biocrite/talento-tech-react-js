@@ -10,6 +10,10 @@ export { Link } from "./Link/Link";
 export { Home } from "./Home/Home";
 export { Page } from "./Page/Page.jsx";
 
+export { ProtectedRoute } from "./ProtectedRoute/ProtectedRoute.jsx";
+export { Admin } from "./Admin/Admin.jsx"
+export { Login } from "./Login/Login";
+
 export { Shop } from "./Shop/Shop";
 export { ProductList } from "./Shop/ProductList/ProductList";
 export { SingleItem } from "./Shop/ProductList/SingleItem/SingleItem";

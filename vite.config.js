@@ -19,8 +19,10 @@ export default defineConfig({
   resolve: {
     alias: {
       "@context": path("./src/context"),
+      "@firebase-config": path("./src/firebase"),
       "@components": path("./src/components"),
       "@utils": path("./src/utils"),
+      "@services": path("./src/services"),
       "@data": path("./src/data"),
       "@pages": path("./src/pages"),
       "@routes": path("./src/routes"),

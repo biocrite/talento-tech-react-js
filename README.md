@@ -1,4 +1,4 @@
-# 🛍️ Multilingual E-Commerce App (Firestore)
+# 🛍️ Multilingual E-Commerce App
 
 A responsive, multilingual e-commerce application built with **React**. The project focuses on reusable components, localized routing, shared state management, and a responsive shopping experience.
 

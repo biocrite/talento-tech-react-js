@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 
 import { ProductList } from "@components";
 import { useLocalization } from "@context";
-import { usePageTitle } from "@utils";
+import { usePageTitle, useProducts } from "@utils";
 import { routes } from "@routes";
 
 import "./Shop.css";
@@ -33,9 +33,8 @@ export const Shop = () => {
   const { category } = useParams();
   const navigate = useNavigate();
 
-  const [products, setProducts] = useState([]);
-  const [errors, setErrors] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const { products, loading, error } = useProducts();
+
 
   const categories = useSortedLocalizedCategories(products);
 
@@ -44,20 +43,6 @@ export const Shop = () => {
   const filteredProducts = getProductsFromCategory(products, selectedCategory);
 
   usePageTitle(category ? getCapitalizedFirstLetter(t(category)) : t("shop"));
-
-  useEffect(() => {
-    fetch("/data/products.json")
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error("Error al cargar los productos");
-        }
-
-        return res.json();
-      })
-      .then((data) => setProducts(data))
-      .catch((error) => setErrors(error.message))
-      .finally(() => setLoading(false));
-  }, []);
 
   const handleCategoryClick = (categoryKey) => {
     if (!categoryKey || categoryKey === selectedCategory) {
@@ -75,7 +60,7 @@ export const Shop = () => {
 
   if (loading) return <h2>{t("loading")}</h2>;
 
-  if (errors) return <p>{errors}</p>;
+  if (error) return <p>{error}</p>;
 
   return (
     <section>

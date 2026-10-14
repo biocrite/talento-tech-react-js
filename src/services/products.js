@@ -4,7 +4,11 @@ import {
   getDoc,
   getDocs,
   query, 
-  where
+  where,
+    addDoc,
+  deleteDoc,
+  updateDoc,
+  // limit,
 } from "firebase/firestore";
 import { db } from "@firebase-config/firebase.js";
 
@@ -47,4 +51,29 @@ export const getProductsByCategory = async (category) => {
     id: item.id,
     ...item.data(),
   }));
+};
+
+
+export const createProduct = async (product) => {
+  const existingProducts = await getProducts();
+
+  const nextId =
+    Math.max(0, ...existingProducts.map((item) => Number(item.id) || 0)) + 1;
+
+  const productData = { ...product, id: nextId };
+  const reference = await addDoc(productsCollection, productData);
+
+  return { ...productData, docId: reference.id };
+};
+
+export const updateProduct = async (docId, product) => {
+  const { docId: ignored, ...productData } = product;
+
+  await updateDoc(doc(productsCollection, docId), productData);
+
+  return { ...productData, docId };
+};
+
+export const deleteProduct = async (docId) => {
+  await deleteDoc(doc(productsCollection, docId));
 };

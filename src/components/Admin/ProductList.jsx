@@ -1,5 +1,6 @@
 import { AdminStats } from "./AdminStats.jsx";
 import { useLocalization } from "@context";
+import { useLocalizedText } from "@utils";
 import "./ProductList.css";
 
 export function ProductList({
@@ -14,6 +15,8 @@ export function ProductList({
   onDelete,
 }) {
   const { t } = useLocalization();
+   const getLocalizedText = useLocalizedText();
+
   return (
     <section className="admin-section">
       <div className="admin-section-heading">
@@ -74,7 +77,8 @@ export function ProductList({
 
               <div className="admin-product-info">
                 <h3>
-                  {product.name?.es ||
+                  {getLocalizedText(product.name) ||
+                    product.name?.es ||
                     product.name?.en ||
                     product.name?.pt ||
                     "Untitled product"}
@@ -83,7 +87,7 @@ export function ProductList({
                 <p className="admin-product-price">
                   USD ${Number(product.price).toFixed(2)}
                 </p>
-                
+
                 <p className="admin-product-categories">
                   {(product.categories ?? [])
                     .map((category) => t(category))

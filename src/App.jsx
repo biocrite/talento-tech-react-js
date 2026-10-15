@@ -40,11 +40,13 @@ export default function App() {
         <Route
           path="/admin"
           element={
-            <ProtectedRoute requireAdmin>
-              <Admin />
-            </ProtectedRoute>
+            <Navigate
+              to={`/${currentLang}/${routes.admin[currentLang]}`}
+              replace
+            />
           }
         />
+
         {supportedLangs.map((language) => (
           <Route key={language} path={`/${language}`}>
             {/* Home */}

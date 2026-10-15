@@ -34,6 +34,7 @@ export function Admin() {
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
+  const [addProduct, setAddProduct] = useState(false);
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
 
@@ -58,6 +59,7 @@ export function Admin() {
   const resetForm = () => {
     setForm(emptyForm);
     setEditing(null);
+    setAddProduct(null);
     setError("");
   };
 
@@ -236,6 +238,7 @@ export function Admin() {
         </p>
       )}
 
+      {(addProduct || editing) && 
       <section className="admin-section">
         <div className="admin-section-heading">
           <div>
@@ -245,13 +248,13 @@ export function Admin() {
             </p>
           </div>
 
-          {editing && (
+          {(
             <button
               type="button"
               className="admin-button admin-button-secondary"
               onClick={resetForm}
             >
-              Cancel editing
+              Cancel
             </button>
           )}
         </div>
@@ -354,6 +357,7 @@ export function Admin() {
           </button>
         </form>
       </section>
+}
 
       <section className="admin-section">
         <div className="admin-section-heading">
@@ -361,6 +365,14 @@ export function Admin() {
             <h2>Products</h2>
             <p>Search, edit, or remove products from your shop.</p>
           </div>
+
+          <button
+            className="admin-button admin-button-secondary"
+            onClick={ () => {setAddProduct(true)}}
+            disabled={loading}
+          >
+            Add product
+          </button>
 
           <button
             className="admin-button admin-button-secondary"

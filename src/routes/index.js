@@ -5,6 +5,12 @@ export const routes = {
     pt: "",
   },
 
+  admin: {
+    en: "admin",
+    es: "admin",
+    pt: "admin",
+  },
+
   shop: {
     en: "shop",
     es: "tienda",

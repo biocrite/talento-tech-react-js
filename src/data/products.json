@@ -1,0 +1,48 @@
+
+{
+  "product": {
+    "en": "Product",
+    "es": "Producto",
+    "pt": "Produto"
+  },
+  "relatedProducts": {
+    "en": "Related Products",
+    "es": "Productos Relacionados",
+    "pt": "Produtos Relacionados"
+  },
+  "viewProduct": {
+    "en": "View Product",
+    "es": "Ver producto",
+    "pt": "Ver produto"
+  },
+  "price": {
+    "en": "Price",
+    "es": "Precio",
+    "pt": "Preço"
+  },
+  "quantity": {
+    "en": "Quantity",
+    "es": "Cantidad",
+    "pt": "Quantidade"
+  },
+  "search": {
+    "en": "Search",
+    "es": "Buscar",
+    "pt": "Pesquisar"
+  },
+  "searchProducts": {
+    "en": "Search products",
+    "es": "Buscar productos",
+    "pt": "Pesquisar produtos"
+  },
+  "noProductsFound": {
+    "en": "No products found.",
+    "es": "No se encontraron productos.",
+    "pt": "Nenhum produto encontrado."
+  },
+  "productNotFound": {
+    "en": "Product not found.",
+    "es": "No se encontró el producto.",
+    "pt": "O produto não foi encontrado."
+  }
+}

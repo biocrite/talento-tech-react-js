@@ -1,0 +1,58 @@
+
+{
+  "allItems": {
+    "en": "All items",
+    "es": "Todo",
+    "pt": "Tudo"
+  },
+  "children": {
+    "en": "Children",
+    "es": "Niños",
+    "pt": "Crianças"
+  },
+  "baby": {
+    "en": "Baby",
+    "es": "Bebé",
+    "pt": "Bebê"
+  },
+  "women": {
+    "en": "Women",
+    "es": "Mujeres",
+    "pt": "Mulheres"
+  },
+  "sandals": {
+    "en": "Sandals",
+    "es": "Sandalias",
+    "pt": "Sandálias"
+  },
+  "summer": {
+    "en": "Summer",
+    "es": "Verano",
+    "pt": "Verão"
+  },
+  "formal": {
+    "en": "Formal",
+    "es": "Formal",
+    "pt": "Formal"
+  },
+  "heels": {
+    "en": "Heels",
+    "es": "Tacones",
+    "pt": "Saltos"
+  },
+  "men": {
+    "en": "Men",
+    "es": "Hombres",
+    "pt": "Homens"
+  },
+  "oxford": {
+    "en": "Oxford",
+    "es": "Oxford",
+    "pt": "Oxford"
+  },
+  "dress-shoes": {
+    "en": "Dress Shoes",
+    "es": "Zapatos de Vestir",
+    "pt": "Sapatos Sociais"
+  }
+}

@@ -1,0 +1,43 @@
+
+{
+  "privacyPolicy": {
+    "en": "Privacy Policy",
+    "es": "Política de Privacidad",
+    "pt": "Política de Privacidade"
+  },
+  "termsAndConditions": {
+    "en": "Terms and Conditions",
+    "es": "Términos y Condiciones",
+    "pt": "Termos e Condições"
+  },
+  "contact": {
+    "en": "Contact",
+    "es": "Contacto",
+    "pt": "Contato"
+  },
+  "about": {
+    "en": "About Us",
+    "es": "Sobre Nosotros",
+    "pt": "Sobre Nós"
+  },
+  "faq": {
+    "en": "FAQ",
+    "es": "Preguntas Frecuentes",
+    "pt": "Perguntas Frequentes"
+  },
+  "shipping": {
+    "en": "Shipping",
+    "es": "Envíos",
+    "pt": "Envio"
+  },
+  "returns": {
+    "en": "Returns",
+    "es": "Devoluciones",
+    "pt": "Devoluções"
+  },
+  "allRightsReserved": {
+    "en": "All Rights Reserved",
+    "es": "Todos los derechos reservados",
+    "pt": "Todos os direitos reservados"
+  }
+}

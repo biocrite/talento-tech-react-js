@@ -1,0 +1,48 @@
+
+{
+  "loading": {
+    "en": "Loading...",
+    "es": "Cargando...",
+    "pt": "Carregando..."
+  },
+  "error": {
+    "en": "Something went wrong.",
+    "es": "Algo salió mal.",
+    "pt": "Algo deu errado."
+  },
+  "tryAgain": {
+    "en": "Try Again",
+    "es": "Intentar de nuevo",
+    "pt": "Tentar novamente"
+  },
+  "yes": {
+    "en": "Yes",
+    "es": "Sí",
+    "pt": "Sim"
+  },
+  "no": {
+    "en": "No",
+    "es": "No",
+    "pt": "Não"
+  },
+  "cancel": {
+    "en": "Cancel",
+    "es": "Cancelar",
+    "pt": "Cancelar"
+  },
+  "confirm": {
+    "en": "Confirm",
+    "es": "Confirmar",
+    "pt": "Confirmar"
+  },
+  "welcome": {
+    "en": "Welcome",
+    "es": "Bienvenido",
+    "pt": "Bem-vindo"
+  },
+  "undo": {
+    "en": "Undo",
+    "es": "Deshacer",
+    "pt": "Desfazer"
+  }
+}

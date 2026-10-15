@@ -1,0 +1,68 @@
+
+{
+  "addToCart": {
+    "en": "Add to Cart",
+    "es": "Añadir al carrito",
+    "pt": "Adicionar ao carrinho"
+  },
+  "removeFromCart": {
+    "en": "Remove from Cart",
+    "es": "Eliminar del carrito",
+    "pt": "Remover do carrinho"
+  },
+  "viewCart": {
+    "en": "View Cart",
+    "es": "Ver carrito",
+    "pt": "Ver carrinho"
+  },
+  "continueShopping": {
+    "en": "Continue Shopping",
+    "es": "Seguir comprando",
+    "pt": "Continuar comprando"
+  },
+  "addMoreItems": {
+    "en": "Add More Items",
+    "es": "Añadir más productos",
+    "pt": "Adicionar mais produtos"
+  },
+  "total": {
+    "en": "Total",
+    "es": "Total",
+    "pt": "Total"
+  },
+  "subtotal": {
+    "en": "Subtotal",
+    "es": "Subtotal",
+    "pt": "Subtotal"
+  },
+  "emptyCart": {
+    "en": "Your cart is empty.",
+    "es": "Tu carrito está vacío.",
+    "pt": "Seu carrinho está vazio."
+  },
+  "cartTotal": {
+    "en": "Cart Total",
+    "es": "Total del carrito",
+    "pt": "Total do carrinho"
+  },
+  "checkout": {
+    "en": "Checkout",
+    "es": "Finalizar compra",
+    "pt": "Finalizar compra"
+  },
+  "addedToCart": {
+    "en": "Added to cart",
+    "es": "Se adicionó al carrito",
+    "pt": "No carrinho"
+  },
+  "removedFromCart": {
+    "en": "Removed from cart",
+    "es": "Se eliminó del carrito",
+    "pt": "Removido do carrinho"
+  },
+  "readdedToCart": {
+    "en": "Added back to cart",
+    "es": "Se readicionó al carrito",
+    "pt": "Adicionado novamente ao carrinho"
+  }
+}

@@ -1,0 +1,73 @@
+
+{
+  "homeTitle": {
+    "en": "Find your perfect pair",
+    "es": "Encuentra tu par perfecto",
+    "pt": "Encontre o seu par perfeito"
+  },
+  "homeSubtitle": {
+    "en": "Discover comfortable and stylish footwear for every step of your journey.",
+    "es": "Descubre calzado cómodo y con estilo para cada paso de tu camino.",
+    "pt": "Descubra calçados confortáveis e estilosos para cada passo."
+  },
+  "shopNow": {
+    "en": "Shop now",
+    "es": "Comprar ahora",
+    "pt": "Comprar agora"
+  },
+  "ourSelection": {
+    "en": "Our selection",
+    "es": "Nuestra selección",
+    "pt": "Nossa seleção"
+  },
+  "featuredProducts": {
+    "en": "Featured products",
+    "es": "Productos destacados",
+    "pt": "Produtos em destaque"
+  },
+  "viewAllProducts": {
+    "en": "View all products",
+    "es": "Ver todos los productos",
+    "pt": "Ver todos os produtos"
+  },
+  "explore": {
+    "en": "Explore",
+    "es": "Explora",
+    "pt": "Explore"
+  },
+  "shopByCategory": {
+    "en": "Shop by category",
+    "es": "Comprar por categoría",
+    "pt": "Comprar por categoria"
+  },
+  "fastDelivery": {
+    "en": "Fast delivery",
+    "es": "Entrega rápida",
+    "pt": "Entrega rápida"
+  },
+  "fastDeliveryDescription": {
+    "en": "Get your order delivered quickly and safely.",
+    "es": "Recibe tu pedido de forma rápida y segura.",
+    "pt": "Receba seu pedido com rapidez e segurança."
+  },
+  "easyReturns": {
+    "en": "Easy returns",
+    "es": "Devoluciones fáciles",
+    "pt": "Devoluções fáceis"
+  },
+  "easyReturnsDescription": {
+    "en": "Changed your mind? Returning your order is simple.",
+    "es": "¿Cambiaste de opinión? Devolver tu pedido es muy sencillo.",
+    "pt": "Mudou de ideia? Devolver seu pedido é simples."
+  },
+  "secureShopping": {
+    "en": "Secure shopping",
+    "es": "Compra segura",
+    "pt": "Compra segura"
+  },
+  "secureShoppingDescription": {
+    "en": "Your personal information and payment are always protected.",
+    "es": "Tu información personal y tus pagos están siempre protegidos.",
+    "pt": "Suas informações pessoais e seus pagamentos estão sempre protegidos."
+  }
+}

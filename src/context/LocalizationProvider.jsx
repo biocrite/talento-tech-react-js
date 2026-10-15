@@ -5,7 +5,7 @@ import {
   useState,
 } from "react";
 
-import rosetta from "@data/translations.json";
+import rosetta from "@data/translations.js";
 
 const LocalizationContext = createContext(null);
 

@@ -9,7 +9,7 @@ import {
   Page,
   Login,
   ProtectedRoute,
-  Admin
+  Admin,
 } from "@components";
 
 import { useLocalization } from "@context";
@@ -49,6 +49,15 @@ export default function App() {
           <Route key={language} path={`/${language}`}>
             {/* Home */}
             <Route index element={<Home />} />
+
+            <Route
+              path={`${routes.admin[language]}/*`}
+              element={
+                <ProtectedRoute requireAdmin>
+                  <Admin />
+                </ProtectedRoute>
+              }
+            />
 
             {/* Shop */}
             <Route path={`${routes.shop[language]}/*`}>

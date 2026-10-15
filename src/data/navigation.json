@@ -1,0 +1,48 @@
+
+{
+  "home": {
+    "en": "Home",
+    "es": "Inicio",
+    "pt": "Início"
+  },
+  "shop": {
+    "en": "Shop",
+    "es": "Tienda",
+    "pt": "Loja"
+  },
+  "cart": {
+    "en": "Cart",
+    "es": "Carrito",
+    "pt": "Carrinho"
+  },
+  "products": {
+    "en": "Products",
+    "es": "Productos",
+    "pt": "Produtos"
+  },
+  "back": {
+    "en": "Back",
+    "es": "Volver",
+    "pt": "Voltar"
+  },
+  "next": {
+    "en": "Next",
+    "es": "Siguiente",
+    "pt": "Próximo"
+  },
+  "previous": {
+    "en": "Previous",
+    "es": "Anterior",
+    "pt": "Anterior"
+  },
+  "close": {
+    "en": "Close",
+    "es": "Cerrar",
+    "pt": "Fechar"
+  },
+  "open": {
+    "en": "Open",
+    "es": "Abrir",
+    "pt": "Abrir"
+  }
+}

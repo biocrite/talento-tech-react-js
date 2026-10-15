@@ -1,0 +1,53 @@
+
+{
+  "language": {
+    "en": "Language",
+    "es": "Idioma",
+    "pt": "Idioma"
+  },
+  "currency": {
+    "en": "Currency",
+    "es": "Moneda",
+    "pt": "Moeda"
+  },
+  "english": {
+    "en": "English",
+    "es": "Inglés",
+    "pt": "Inglês"
+  },
+  "spanish": {
+    "en": "Spanish",
+    "es": "Español",
+    "pt": "Espanhol"
+  },
+  "portuguese": {
+    "en": "Portuguese",
+    "es": "Portugués",
+    "pt": "Português"
+  },
+  "ars": {
+    "en": "Argentine Peso",
+    "es": "Peso argentino",
+    "pt": "Peso argentino"
+  },
+  "usd": {
+    "en": "US Dollar",
+    "es": "Dólar estadounidense",
+    "pt": "Dólar estadounidense"
+  },
+  "brl": {
+    "en": "Brazilian Real",
+    "es": "Real brasileño",
+    "pt": "Real brasileiro"
+  },
+  "languageChanged": {
+    "en": "Language changed.",
+    "es": "Idioma cambiado.",
+    "pt": "Idioma alterado."
+  },
+  "currencyChanged": {
+    "en": "Currency changed.",
+    "es": "Moneda cambiada.",
+    "pt": "Moeda alterada."
+  }
+}

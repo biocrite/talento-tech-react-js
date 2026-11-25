@@ -5,7 +5,7 @@ import {
   useState,
 } from "react";
 
-import rosetta from "@data/translations.js";
+import translations from "@data/translations";
 
 const LocalizationContext = createContext(null);
 
@@ -30,7 +30,7 @@ function LocalizationProvider({ children }) {
   }, [siteCurrency]);
 
   function t(key) {
-    return rosetta[key]?.[siteLanguage] ?? key;
+    return translations[key]?.[siteLanguage] ?? key;
   }
 
   return (

@@ -1,6 +1,6 @@
 
 export async function uploadImageToImgBB(file) {
-  const apiKey = import.meta.env.VITE_IMGBB_API_KEY || "745e79b7db3a6ab1d5fb337852477790";
+  const apiKey = "745e79b7db3a6ab1d5fb337852477790";
 
   if (!apiKey) {
     throw new Error("ImgBB API key is missing.");
